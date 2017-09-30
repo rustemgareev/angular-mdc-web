@@ -6,7 +6,7 @@ import {
   Renderer2,
   ViewChild,
 } from '@angular/core';
-import { ComponentPortal, BasePortalHost, PortalHostDirective } from '../overlay';
+import { ComponentPortal, BasePortalHost, PortalHostDirective } from '../cdk/portal';
 
 @Component({
   selector: 'mdc-snackbar-container',

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { OverlayModule } from './overlay/index';
+import { OverlayModule } from './cdk/overlay/index';
 
 import { MdcButtonModule } from './button/index';
 import { MdcCardModule } from './card/index';

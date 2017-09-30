@@ -1,6 +1,6 @@
 export * from './module';
 
-export * from './overlay/index';
+export * from './cdk/overlay/index';
 
 export * from './button/index';
 export * from './card/index';

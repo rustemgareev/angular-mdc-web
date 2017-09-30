@@ -1,4 +1,4 @@
-import { OverlayRef } from '../overlay/overlay-ref';
+import { OverlayRef } from '../cdk/overlay/overlay-ref';
 import { MdcSnackbarContainer } from './snackbar-container.component';
 
 /**

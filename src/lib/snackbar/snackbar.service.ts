@@ -6,7 +6,8 @@ import {
   SkipSelf,
 } from '@angular/core';
 import { extendObject } from '../common';
-import { Overlay, OverlayRef, Portal, ComponentType, ComponentPortal, HostInjector } from '../overlay';
+import { Overlay, OverlayRef } from '../cdk/overlay';
+import { Portal, ComponentType, ComponentPortal, HostInjector } from '../cdk/portal';
 
 import { MdcSnackbarRef } from './snackbar-ref';
 import { MdcSnackbarComponent } from './snackbar.component';
@@ -56,7 +57,7 @@ export class MdcSnackbarService {
 
     const snackBarRef = this._attach(MdcSnackbarComponent, _config);
     this._openedSnackBarRef = snackBarRef;
-    
+
     return this._openedSnackBarRef;
   }
 
@@ -92,7 +93,6 @@ export class MdcSnackbarService {
 
     // We can't pass this via the injector, because the injector is created earlier.
     snackBarRef.componentInstance = contentRef.instance;
-    snackBarRef.componentInstance
 
     return snackBarRef;
   }
